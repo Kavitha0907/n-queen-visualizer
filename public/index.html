@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens Visualizer</title>
+    <meta name="description" content="A dynamic visualizer for the N-Queens backtracking algorithm.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>N-Queens Visualizer</h1>
+            <p>Watch the backtracking algorithm in action!</p>
+        </header>
+
+        <main>
+            <div class="controls glass-panel">
+                <div class="control-group">
+                    <label for="board-size">Board Size (<span id="size-label">4</span>)</label>
+                    <input type="range" id="board-size" min="4" max="10" value="4">
+                </div>
+                <div class="control-group">
+                    <label for="speed">Animation Speed</label>
+                    <input type="range" id="speed" min="1" max="100" value="80">
+                </div>
+                <div class="button-group">
+                    <button id="btn-start" class="btn primary">Start / Resume</button>
+                    <button id="btn-pause" class="btn" disabled>Pause</button>
+                    <button id="btn-reset" class="btn danger">Reset</button>
+                </div>
+            </div>
+
+            <div class="progress-info">
+                <span id="status-text">Ready to solve</span>
+                <span id="solutions-text">Solutions Found: 0</span>
+            </div>
+
+            <div class="board-wrapper glass-panel">
+                <div id="board" class="board"></div>
+            </div>
+
+            <div id="solutions-gallery" class="solutions-gallery hidden">
+                <h2>Final Configurations</h2>
+                <div id="solutions-container" class="solutions-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
