@@ -19,9 +19,11 @@ REST API
 HTML, CSS, JavaScript
 
 **How It Works**
+
 User inputs value of N
 Frontend calls:
 /api/solve?n=4
+
 Backend:
 
 Solves using backtracking
@@ -32,6 +34,7 @@ Frontend animates the board
 **Project Structure**
 
 src/            → Java backend
+
 public/         → Frontend files
 
 **Run the Project**
